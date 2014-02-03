@@ -1,0 +1,5 @@
+#created by NP
+#specify what Ruby version and gemset to use. 
+#This eliminates the need to manually keep track of the ruby version you have active.
+#rvm ruby_version@gemset
+rvm 2.0.0@railstutorial_rails_4_0
