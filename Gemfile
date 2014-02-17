@@ -51,6 +51,14 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+#NP 1.4.1 Heroku setup
+#add the pg gem in the production environment to allow Rails to talk to Postgres
+#rails_12factor gem, is used by Heroku to serve static assets such as images and stylesheets.
+group :production do
+  gem 'pg', '0.15.1'
+  gem 'rails_12factor', '0.0.2'
+end
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 
